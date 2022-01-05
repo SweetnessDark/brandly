@@ -1,23 +1,4 @@
 {
-  "name": "web-starter-jc",
-  "version": "5.1.0",
-  "description": "Starter kit for markup projects",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/justcoded/web-starter-kit"
-  },
-  "keywords": [
-    "starter",
-    "markup",
-    "JustCoded",
-    "jc"
-  ],
-  "author": "JustCoded",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/justcoded/web-starter-kit/issues"
-  },
-  "homepage": "https://github.com/justcoded/web-starter-kit",
   "devDependencies": {
     "@babel/core": "7.11.6",
     "@babel/plugin-proposal-object-rest-spread": "7.11.0",

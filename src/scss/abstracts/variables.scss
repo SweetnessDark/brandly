@@ -51,15 +51,19 @@ $media-expressions: (
   // Colors
   --color-white: #fff;
   --color-black: #000;
-  --color-grey: #999;
-  --color-blue: #39f;
+  --color-grey: #777;
+  --color-grey-black: #333;
+  --color-burgund: #cb1b1c;
+  --color-red: #dc0000;
 
   // Fonts
-  --font-sans-serif: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  --font-sans-serif: 'Lato', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  --font-family-sans-serif: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   --font-serif: 'Times New Roman', Times, Baskerville, Georgia, serif;
+  --font-cursive: 'Bebas Neue', cursive;
 
   // Body base
-  --base-background-color: var(--color-black);
+  --base-background-color: var(--color-white);
   --base-font-family: var(--font-sans-serif);
   --base-font-size: 1.6rem;
   --base-line-height: 1.2;
