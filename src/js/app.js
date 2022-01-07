@@ -8,5 +8,10 @@ import dots from './modules/dots';
 
 // When DOM is ready
 $(() => {
-  dots();
+	const swiper = new Swiper('.mySwiperBanner', {
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+	});
 });
