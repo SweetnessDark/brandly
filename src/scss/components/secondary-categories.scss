@@ -1,0 +1,113 @@
+.secondary-categories {
+    @extend %listreset;
+    display: flex;
+    justify-content: space-between;
+
+    @media (min-width: 376px) and (max-width: 481px) {        
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    @media (min-width: 320px) and (max-width: 375px) {      
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    li {
+        width: 570px;
+        font: 700 45px/1 var(--font-sans-serif);
+        text-align: center;
+
+        @media (min-width: 376px) and (max-width: 481px) {        
+            width: 340px;
+            height: 249px;
+            font-size: 25px;
+            margin-bottom: 25px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    
+        @media (min-width: 320px) and (max-width: 375px) {      
+            width: 300px;
+            height: 220px;
+            font-size: 20px;
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .secondary-category-item {
+        transition: linear 250ms;
+
+        &:hover {
+            opacity: 1;
+
+            span {
+                color: transparent;
+                transition: linear 250ms;
+
+                &:before,
+                &:after {
+                    background: transparent;
+                }
+            }
+        }
+
+        span {
+            position: absolute;
+            width: 380px;
+            right: 0;
+            left: 16%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+
+            @media (min-width: 376px) and (max-width: 481px) {        
+                width: 233px;
+            }
+        
+            @media (min-width: 320px) and (max-width: 375px) {      
+                width: 203px;
+            }
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                height: 1px;
+                width: 192px;
+                background: var(--color-white);
+            }
+        
+            &:before {
+                top: 0;
+                left: 26%;
+
+                @media (min-width: 376px) and (max-width: 481px) {        
+                    left: 9%;
+                }
+            
+                @media (min-width: 320px) and (max-width: 375px) {      
+                    left: 4%;
+                }
+            }
+        
+            &:after {
+                bottom: 0;
+                right: 26%;
+
+                @media (min-width: 376px) and (max-width: 481px) {        
+                    right: 9%;
+                }
+            
+                @media (min-width: 320px) and (max-width: 375px) {      
+                    right: 2%;
+                }
+            }
+        }
+    }
+}
