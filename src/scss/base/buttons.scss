@@ -1,0 +1,11 @@
+.btn {
+    margin: 0;
+    border: 0;
+    background: none;
+    display: inline-block;
+    line-height: 1;
+    
+    &-select {
+        transition: background-color 250ms linear;
+    }
+}
