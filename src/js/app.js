@@ -8,5 +8,15 @@ import dots from './modules/dots';
 
 // When DOM is ready
 $(() => {
-  dots();
+  const swiper = new Swiper('.mySwiperArrows', {
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    autoplay: {
+      delay: 2000,
+    }
+  });
 });
