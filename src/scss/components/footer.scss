@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: center;
+
+    .container {
+        padding-top: 71px;
+        padding-bottom: 71px;
+
+        @media (max-width: 481px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    h4 {
+        color: var(--color-grey);
+        font: 400 18px/1 var(--font-sans-serif);
+    }
+}
