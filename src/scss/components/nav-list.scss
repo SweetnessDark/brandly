@@ -5,12 +5,7 @@
     flex-direction: row;
     color: var(--color-white);
 
-    @media (min-width: 376px) and (max-width: 481px) {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    @media (min-width: 320px) and (max-width: 375px) {
+    @media (max-width: 481px) {
         flex-direction: column;
         text-align: center;
     }
@@ -22,16 +17,17 @@
             padding-right: 0;
         }
 
-        @media (min-width: 376px) and (max-width: 481px) {
-            padding-top: 15px;
+        @media (max-width: 481px) {
             padding-bottom: 10px;
             padding-right: 0;
+        }
+
+        @media (min-width: 376px) and (max-width: 481px) {
+            padding-top: 15px;
         }
     
         @media (min-width: 320px) and (max-width: 375px) {
             padding-top: 10px;
-            padding-bottom: 10px;
-            padding-right: 0;
         }
     }
 

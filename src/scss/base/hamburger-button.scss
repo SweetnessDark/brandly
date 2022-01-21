@@ -10,11 +10,7 @@
         transition: background-color 250ms linear;
         z-index: 900;
 
-        @media (min-width: 376px) and (max-width: 481px) {
-            display: block;
-        }
-
-        @media (min-width: 320px) and (max-width: 375px) {
+        @media (max-width: 481px) {
             display: block;
         }
     }

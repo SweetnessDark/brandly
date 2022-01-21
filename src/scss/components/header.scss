@@ -16,12 +16,7 @@
         }
 
         .nav {
-            @media (min-width: 376px) and (max-width: 481px) {
-                height: max-content;
-                z-index: 102;
-            }
-        
-            @media (min-width: 320px) and (max-width: 375px) {
+            @media (max-width: 481px) {
                 height: max-content;
                 z-index: 102;
             }
@@ -30,11 +25,7 @@
         .nav-list {
             color: var(--color-grey);
 
-            @media (min-width: 376px) and (max-width: 481px) {
-                color: var(--color-white);
-            }
-        
-            @media (min-width: 320px) and (max-width: 375px) {
+            @media (max-width: 481px) {
                 color: var(--color-white);
             }
         }
