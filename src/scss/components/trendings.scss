@@ -15,11 +15,7 @@
         height: max-content;
         z-index: 1;
 
-        @media (min-width: 376px) and (max-width: 481px) {        
-            object-fit: cover;
-        }
-    
-        @media (min-width: 320px) and (max-width: 375px) {      
+        @media (max-width: 481px) {
             object-fit: cover;
         }
     }

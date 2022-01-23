@@ -11,35 +11,18 @@
     &:before,
     &:after {
         content: '';
-        position: absolute;
+        display: flex;
+        margin: 0 auto;
         height: 1px;
         width: 113px;
         background: var(--color-burgund);
     }
 
     &:before {
-        top: 0;
-        left: 45%;
-
-        @media (min-width: 376px) and (max-width: 481px) {        
-            left: 33%;
-        }
-    
-        @media (min-width: 320px) and (max-width: 375px) {      
-            left: 33%;
-        }
+        margin-bottom: 29px;
     }
 
     &:after {
-        bottom: 0;
-        right: 45%;
-
-        @media (min-width: 376px) and (max-width: 481px) {        
-            right: 34%;
-        }
-    
-        @media (min-width: 320px) and (max-width: 375px) {      
-            right: 30%;
-        }
+        margin-top: 31px;
     }
 }

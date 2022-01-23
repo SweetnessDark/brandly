@@ -6,22 +6,23 @@
     color: var(--color-grey);
     font: 400 18px/1 var(--font-sans-serif);
 
-    @media (min-width: 376px) and (max-width: 481px) {
+    @media (max-width: 481px) {
         position: relative;
+        text-align: center;
+    }
+
+    @media (min-width: 376px) and (max-width: 481px) {
         top: 0;
         width: 370px;
         padding-right: 15px;
         padding-left: 15px;
-        text-align: center;
     }
 
     @media (min-width: 320px) and (max-width: 375px) {
-        position: relative;  
         width: 320px;
         padding-right: 10px;
         padding-left: 10px;
         margin-bottom: 29px;
-        text-align: center;
     }
     
     h3 {
@@ -49,14 +50,13 @@
             margin-top: 30px;
             margin-bottom: 28px;
 
-            @media (min-width: 376px) and (max-width: 481px) {        
+            @media (max-width: 481px) {
                 margin-left: 47%;
+            }
+
+            @media (min-width: 376px) and (max-width: 481px) {
                 margin-top: 20px;
                 margin-bottom: 20px;
-            }
-        
-            @media (min-width: 320px) and (max-width: 375px) {      
-                margin-left: 47%;
             }
         }
     }
@@ -87,18 +87,11 @@
             &:last-child {
                 margin-right: 0;
             }
-
-            &:hover,
-            &:active {
-                background-color: var(--color-grey);
-            }
         }
-
+        
         .btn-select {
-            &:hover,
-            &:active {
-                color: var(--color-white);
-            }
+            color: var(--color-white);
+            background-color: var(--color-grey);
         }
     }
 
