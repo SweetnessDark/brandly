@@ -14,55 +14,6 @@
             padding-right: 10px;
         }
     }
-    
-    .section {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    
-    .section-heading {
-        position: relative;
-        margin-bottom: 60px;
-        padding: 20px 0;
-        color: var(--color-grey);
-        font: italic 300 40px/1 var(--font-family-sans-serif);
-        text-align: center;
-    
-        &:before,
-        &:after {
-            content: '';
-            position: absolute;
-            height: 1px;
-            width: 113px;
-            background: var(--color-burgund);
-        }
-    
-        &:before {
-            top: 0;
-            left: 45%;
-
-            @media (min-width: 376px) and (max-width: 481px) {        
-                left: 33%;
-            }
-        
-            @media (min-width: 320px) and (max-width: 375px) {      
-                left: 33%;
-            }
-        }
-    
-        &:after {
-            bottom: 0;
-            right: 45%;
-
-            @media (min-width: 376px) and (max-width: 481px) {        
-                right: 34%;
-            }
-        
-            @media (min-width: 320px) and (max-width: 375px) {      
-                right: 30%;
-            }
-        }
-    }
 
     .secondary-category-item,
     .primary-category-item {
