@@ -1,4 +1,9 @@
 .trendings {
+    background-image: url('/images/bg-img.png');
+
+    @media (max-width: 481px) {
+        object-fit: cover;
+    }
 
     .container {
         overflow: hidden;
@@ -7,16 +12,6 @@
 
         img {
             overflow: hidden;
-        }
-    }
-
-    .background {
-        position: absolute;
-        height: max-content;
-        z-index: 1;
-
-        @media (max-width: 481px) {
-            object-fit: cover;
         }
     }
 
