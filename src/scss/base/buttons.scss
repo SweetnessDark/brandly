@@ -4,8 +4,22 @@
     background: none;
     display: inline-block;
     line-height: 1;
-    
-    &-select {
+  
+     &-select {
         transition: background-color 250ms linear;
+      }
+  
+    &-form {
+        width: 270px;
+        height: 49px;
+        color: var(--color-black);
+        background-color: var(--color-white);
+        font: 700 18px/1 var(--font-family-sans-serif);
+        transition: background-color 250ms linear;
+
+        &:hover {
+            color: var(--color-white);
+            background-color: var(--color-burgund);
+        }
     }
 }
