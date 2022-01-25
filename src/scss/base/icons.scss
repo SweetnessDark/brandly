@@ -1,0 +1,61 @@
+.icon {
+    display: inline-block;
+    line-height: 1;
+
+    &-hamburger {
+        position: relative;
+        top: -5px;
+        width: 22px;
+        height: 3px;
+        background-color: var(--color-grey);
+        transition: transform 250ms linear;
+
+        &:hover,
+        &:active {
+            background-color: var(--color-burgund);
+        }
+
+        &:hover:before,
+        &:active:before {
+            background-color: var(--color-burgund);
+        }
+
+        &:hover:after,
+        &:active:after {
+            background-color: var(--color-burgund);
+        }
+
+        &:before,
+        &:after {
+            position: absolute;
+            right: 0;
+            left: 0;
+            content: '';
+            width: 22px;
+            height: 3px;
+            background-color: var(--color-grey);
+            transition: transform 250ms linear;
+            z-index: 900;
+        }
+
+        &:before {
+            top: -8px;
+        }
+        &:after {
+            bottom: -8px;
+        }
+
+        .is-active & {
+            background-color: transparent;
+
+            &:before {
+                transform: translate(7px, 2px) rotate(49deg);
+                transform-origin: left top;
+            }
+            &:after {
+                transform: translate(0, -15px) rotate(-49deg);
+                transform-origin: right bottom;
+            }
+        }
+    }
+}

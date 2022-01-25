@@ -1,0 +1,22 @@
+.nav {
+    display: flex;   
+    align-items: center;
+    
+    @media (max-width: 481px) {
+        display: none;
+    }
+
+    &.is-active {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 101;
+        background-color: var(--color-grey);
+        height: max-content;
+    }
+}
