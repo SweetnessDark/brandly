@@ -1,0 +1,28 @@
+.section-heading {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 20px 0;
+    color: var(--color-grey);
+    font: italic 300 40px/1 var(--font-family-sans-serif);
+    text-align: center;
+    z-index: 10;
+
+    &:before,
+    &:after {
+        content: '';
+        display: flex;
+        margin: 0 auto;
+        height: 1px;
+        width: 113px;
+        background: var(--color-burgund);
+    }
+
+    &:before {
+        margin-bottom: 29px;
+    }
+
+    &:after {
+        margin-top: 31px;
+    }
+}

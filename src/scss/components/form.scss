@@ -1,0 +1,26 @@
+.form {
+    background-image: url('/images/girl-on-bed.png');
+    object-fit: cover;
+    
+    @media (min-width: 376px) and (max-width: 481px) {
+        width: 360px;
+    }
+    
+    @media (min-width: 320px) and (max-width: 375px) {
+        width: 320px;
+    }
+
+    .container {
+        padding-top: 74px;
+        padding-bottom: 69px;
+    }
+
+    h4 {
+        color: var(--color-white);
+        font: 400 18px/1 var(--font-family-sans-serif);
+
+        @media (max-width: 481px) {
+            text-align: center;
+        }
+    }
+}
