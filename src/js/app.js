@@ -34,7 +34,7 @@ $(() => {
 		   $header.removeClass(HEADER_SCROLL_CLASS_NAME);
 		 }
 
-	const swiper = new Swiper('.mySwiperBanner', {
+	const swiper = new Swiper('.mySwiperBanner', '.mySwiper', {
 		pagination: {
 			el: ".swiper-pagination",
 			clickable: true,
